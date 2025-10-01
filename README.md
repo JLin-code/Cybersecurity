@@ -1,157 +1,110 @@
-# Cybersecurity Course - SUNY New Paltz
+# Cybersecurity Fundamentals
 
-This repository contains materials, assignments, and projects for Cybersecurity 748 at SUNY New Paltz.
+This repository covers essential cybersecurity concepts and attack vectors across system, web, and network security domains. Each topic includes theoretical foundations and practical attack scenarios.
 
-## Course Overview
 
-This course provides a comprehensive introduction to cybersecurity principles, practices, and technologies. Students will learn to identify, assess, and mitigate security risks in various computing environments.
+## System Security
 
-## Learning Objectives
+### Linux Security Basics
+Fundamental security concepts in Linux operating systems including:
+- User and group permissions
+- File system security (rwx permissions)
+- Access control mechanisms
+- Security policies and enforcement
+- Process isolation and privilege separation
 
-- Understand fundamental cybersecurity concepts and principles
-- Identify common security threats and vulnerabilities
-- Implement security controls and countermeasures
-- Analyze security incidents and develop response strategies
-- Apply ethical hacking and penetration testing techniques
-- Design secure network architectures and systems
+### Set-UID Programs
+Understanding privileged programs and their security implications:
+- How Set-UID bits work
+- Privilege escalation mechanisms
+- Common vulnerabilities in Set-UID programs
+- Security best practices for privileged execution
+- Attack vectors targeting Set-UID binaries
 
-## Course Topics
+### Environment Variables and Attack
+Exploitation techniques using environment variables:
+- How environment variables affect program execution
+- PATH manipulation attacks
+- LD_PRELOAD and library injection
+- Shell injection through environment variables
+- Mitigation strategies and secure coding practices
 
-### 1. Fundamentals of Cybersecurity
-- CIA Triad (Confidentiality, Integrity, Availability)
-- Risk Management and Assessment
-- Security Policies and Procedures
-- Compliance and Regulatory Frameworks
-
-### 2. Threat Landscape
-- Types of Cyber Threats
-- Threat Actors and Motivations
-- Attack Vectors and Methodologies
-- Emerging Threats and Trends
-
-### 3. Network Security
-- Firewalls and Intrusion Detection Systems
-- Virtual Private Networks (VPNs)
-- Network Monitoring and Analysis
-- Wireless Security
-- Network Segmentation
-
-### 4. System Security
-- Operating System Hardening
-- Access Control and Authentication
-- Endpoint Protection
-- Patch Management
-- System Monitoring and Logging
-
-### 5. Application Security
-- Secure Software Development Lifecycle (SSDLC)
-- Common Vulnerabilities (OWASP Top 10)
-- Web Application Security
-- Code Review and Testing
-- API Security
-
-### 6. Cryptography
-- Symmetric and Asymmetric Encryption
-- Hash Functions and Digital Signatures
-- Public Key Infrastructure (PKI)
-- Key Management
-- Cryptographic Protocols
-
-### 7. Identity and Access Management
-- Authentication Methods
-- Authorization Models
-- Single Sign-On (SSO)
-- Multi-Factor Authentication (MFA)
-- Privileged Access Management
-
-### 8. Incident Response and Forensics
-- Incident Response Planning
-- Evidence Collection and Preservation
-- Digital Forensics Tools and Techniques
-- Malware Analysis
-- Recovery and Lessons Learned
-
-### 9. Ethical Hacking and Penetration Testing
-- Penetration Testing Methodologies
-- Vulnerability Assessment
-- Social Engineering
-- Exploitation Techniques
-- Reporting and Remediation
-
-### 10. Security Governance and Risk Management
-- Risk Assessment Frameworks
-- Business Continuity Planning
-- Disaster Recovery
-- Security Metrics and KPIs
-- Third-Party Risk Management
-
-## Repository Structure
-
-```
-├── assignments/          # Course assignments and solutions
-├── labs/                # Hands-on laboratory exercises
-├── projects/            # Major course projects
-├── notes/               # Lecture notes and study materials
-├── tools/               # Security tools and scripts
-├── resources/           # Additional learning resources
-└── exams/               # Exam preparation materials
-```
-
-## Tools and Technologies
-
-- **Network Analysis**: Wireshark, Nmap, Nessus
-- **Penetration Testing**: Metasploit, Burp Suite, OWASP ZAP
-- **Forensics**: Autopsy, Volatility, SANS SIFT
-- **Virtualization**: VMware, VirtualBox, Docker
-- **Operating Systems**: Kali Linux, Windows, Ubuntu
-- **Programming**: Python, PowerShell, Bash
-
-## Prerequisites
-
-- Basic understanding of computer networks
-- Familiarity with operating systems (Windows/Linux)
-- Basic programming knowledge
-- Understanding of database concepts
-
-## Certification Preparation
-
-This course helps prepare students for industry certifications including:
-- CompTIA Security+
-- Certified Ethical Hacker (CEH)
-- CISSP Associate
-- GCIH (GIAC Certified Incident Handler)
-
-## Resources
-
-### Books
-- "The Art of Deception" by Kevin Mitnick
-- "Hacking: The Art of Exploitation" by Jon Erickson
-- "Security Engineering" by Ross Anderson
-- "Applied Cryptography" by Bruce Schneier
-
-### Online Resources
-- NIST Cybersecurity Framework
-- OWASP (Open Web Application Security Project)
-- SANS Institute Training Materials
-- CVE Database (Common Vulnerabilities and Exposures)
-
-### Practice Platforms
-- TryHackMe
-- HackTheBox
-- OverTheWire
-- VulnHub
-
-## Contact Information
-
-**Instructor**: [Instructor Name]  
-**Email**: [instructor@newpaltz.edu]  
-**Office Hours**: [Days and Times]  
-**Course Website**: [Blackboard/Canvas Link]
-
-## Academic Integrity
-
-All work submitted must be your own. Collaboration is encouraged for learning, but individual assignments must be completed independently. Proper citation is required for all external sources.
+### Buffer Overflow Attack
+Memory corruption vulnerabilities and exploitation:
+- Stack-based buffer overflows
+- Heap-based buffer overflows
+- Return address manipulation
+- Shellcode injection techniques
+- Modern protections (ASLR, DEP, stack canaries)
 
 ---
 
-*Last Updated: [Current Date]*
+## Web Security
+
+### Web Security Basics
+Core concepts of web application security:
+- HTTP/HTTPS protocol security
+- Session management
+- Authentication and authorization
+- Input validation and sanitization
+- Secure coding principles for web applications
+
+### Cross Site Request Forgery (CSRF)
+Understanding and preventing CSRF attacks:
+- How CSRF attacks work
+- State-changing operations vulnerability
+- CSRF token implementation
+- SameSite cookie attributes
+- Defense mechanisms and best practices
+
+### Cross-Site Scripting (XSS) Attack
+Client-side injection attacks:
+- Reflected XSS attacks
+- Stored XSS attacks
+- DOM-based XSS
+- XSS payload construction
+- Content Security Policy (CSP) as mitigation
+
+### SQL Injection Attack
+Database security and injection prevention:
+- Classic SQL injection techniques
+- Blind SQL injection
+- Union-based attacks
+- Time-based attacks
+- Prepared statements and parameterized queries
+
+---
+
+## Network Security
+
+### Network Security Basics
+Foundational network security concepts:
+- Network protocols and their vulnerabilities
+- Encryption and secure communication
+- Network authentication mechanisms
+- Intrusion detection and prevention
+- Network monitoring and logging
+
+### Attacks in Networking
+Common network-based attack vectors:
+- Man-in-the-middle attacks
+- ARP spoofing and poisoning
+- DNS attacks and cache poisoning
+- Network sniffing and packet analysis
+- Denial of Service (DoS) attacks
+
+### Reconnaissance
+Information gathering and attack preparation:
+- Passive reconnaissance techniques
+- Active scanning and enumeration
+- Footprinting and fingerprinting
+- Social engineering aspects
+- OSINT (Open Source Intelligence) gathering
+
+### Firewalls
+Network perimeter defense mechanisms:
+- Firewall types and architectures
+- Rule configuration and management
+- Stateful vs stateless filtering
+- Application layer filtering
+- Firewall evasion techniques and countermeasures

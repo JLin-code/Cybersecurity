@@ -1,7 +1,6 @@
-# Cybersecurity Fundamentals
+# Cybersecurity
 
-This repository covers essential cybersecurity concepts and attack vectors across system, web, and network security domains. Each topic includes theoretical foundations and practical attack scenarios.
-
+This repository covers essential cybersecurity concepts and attack vectors taught in class at SUNY New Paltz (CPS493-02)
 
 ## System Security
 

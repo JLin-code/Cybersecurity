@@ -61,11 +61,13 @@ user earl. I didn’t show you the command, but Google it! “Googling”
 skills are a great skill in CS; It’s impossible to know everything.
 
 The user earl doesn't actually exist, but I deleted bobby instead
+
 ![alt text](image-3.png)
 
 
 9. Change the password of sally to something you can remember using
 sudo passwd sally
+
 ![alt text](image-4.png)
 
 10. For the rest of the tasks, use the ubuntu user. Even though it’s easier
@@ -91,22 +93,22 @@ sambashare = network file sharing
 
 13. Give sally the ability to execute sudo commands. Next, try to create a
 new user while logged in as sally.
-
+![alt text](image-6.png)
 
 14. Create a new group called cybersec
-
-
 15. Add sally to the group, cybersec
-
-
 16. Check to see which groups sally belongs.
 Permission and Access Control Lists:
 
+![alt text](image-7.png)
 
 17. Create a new directory called lab1. Enter the command to find the
 permissions of the directory. Who is the owner and group owner of this
 directory? What permissions does the owner, group and other have?
 
+
+
+![alt text](image-8.png)
 
 18. Change your directory to lab1. Create a new bash file called,
 helloWorld. When ran, your program should just print “Hello World!”.

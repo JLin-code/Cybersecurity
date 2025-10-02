@@ -60,15 +60,19 @@ name earl. What happens? Why?
 user earl. I didn’t show you the command, but Google it! “Googling”
 skills are a great skill in CS; It’s impossible to know everything.
 
+The user earl doesn't actually exist, but I deleted bobby instead
+![alt text](image-3.png)
+
 
 9. Change the password of sally to something you can remember using
 sudo passwd sally
-
+![alt text](image-4.png)
 
 10. For the rest of the tasks, use the ubuntu user. Even though it’s easier
 to complete tasks/commands, why is it bad practice to stay logged in
 as root?
 
+Staying as root is dangerous because any mistakes like (rm -rf /) could break the whole system, so it's better practice to work as a normal user and only use higher privilege when necessary
 
 11. Enter the command to see what your user id is.
 

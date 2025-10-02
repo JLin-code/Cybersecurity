@@ -48,11 +48,12 @@ adduser creates a high-level account with homedir, environment, and password set
 6. Change the current user to sally. What does the prompt look like now?
 
 su - sally
-Changes the prompty to look like: sally@machine:~$
+Changes the prompty to look like: sally@lin52-virtual-machine:~$
 
 
 7. While you’re logged in as sally still, try to create a new user with the
 name earl. What happens? Why?
+"sally is not in the sudoers file. This incident will be reported" appears due the fact that sally does not have adequate permission since only root/sudo users can do that
 
 
 8. Enter exit until you are the original user, ubuntu, again. Delete the

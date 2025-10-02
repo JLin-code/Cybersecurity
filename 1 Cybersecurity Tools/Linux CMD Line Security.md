@@ -127,7 +127,10 @@ a. Group already had w/x permissions
 
 
 20. Use the getfacl command to view the ACL of the file.
-
+![alt text](image-11.png)
 
 21. Using the setfacl command, allow the user, sally, the ability to read
 and write to the file. 
+
+sally@linj54-virtual-machine:~/lab1$ sudo setfacl -m u:sally:rw helloWorld
+![alt text](image-12.png)

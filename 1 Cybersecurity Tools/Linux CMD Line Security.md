@@ -75,12 +75,12 @@ as root?
 Staying as root is dangerous because any mistakes like (rm -rf /) could break the whole system, so it's better practice to work as a normal user and only use higher privilege when necessary
 
 11. Enter the command to see what your user id is.
-
+![alt text](image-5.png)
 
 
 Group Tasks:
 12. What groups does ubuntu belong to?
-
+adm cdrom sudo dip plugdev lpadmin lxd sambashare
 
 13. Give sally the ability to execute sudo commands. Next, try to create a
 new user while logged in as sally.

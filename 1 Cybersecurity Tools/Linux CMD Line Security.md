@@ -80,7 +80,14 @@ Staying as root is dangerous because any mistakes like (rm -rf /) could break th
 
 Group Tasks:
 12. What groups does ubuntu belong to?
-adm cdrom sudo dip plugdev lpadmin lxd sambashare
+adm = logs
+cdrom = disc access
+sudo = admin rights
+dip = network dial-up
+plugdev = USB devices
+lpadmin = printers
+lxd = containers
+sambashare = network file sharing
 
 13. Give sally the ability to execute sudo commands. Next, try to create a
 new user while logged in as sally.

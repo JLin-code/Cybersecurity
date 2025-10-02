@@ -106,7 +106,9 @@ Permission and Access Control Lists:
 permissions of the directory. Who is the owner and group owner of this
 directory? What permissions does the owner, group and other have?
 
-
+Owner has read, write, and execute permission  
+Group has read, write, and execute permission
+Other has read and execute permission
 
 ![alt text](image-8.png)
 
@@ -114,6 +116,11 @@ directory? What permissions does the owner, group and other have?
 helloWorld. When ran, your program should just print “Hello World!”.
 (Don’t forget to make your bash file executable).
 
+Here's the file for helloWorld
+![alt text](image-9.png)
+
+helloWorld file created and executed
+![alt text](image-10.png)
 
 19. Enter the command ls -la helloWorld. What are the reading, writing,
 and executing permissions for the owner, group and other?

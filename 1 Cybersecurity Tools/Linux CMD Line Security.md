@@ -4,7 +4,6 @@ how many updates that can be applied. Enter the command to list the
 updates available.
 
 sudo apt list --upgradable
-
 ![alt text](image.png)
 
 
@@ -12,7 +11,6 @@ sudo apt list --upgradable
 
 sudo apt update
 sudo apt upgrade -y
-
 ![alt text](image-1.png)
 
 
@@ -42,7 +40,6 @@ useradd creates a low-level account with nothing else
 
 sudo adduser sally
 adduser creates a high-level account with homedir, environment, and password setup neccsary
-
 ![alt text](image-2.png)
 
 6. Change the current user to sally. What does the prompt look like now?
@@ -61,13 +58,11 @@ user earl. I didn’t show you the command, but Google it! “Googling”
 skills are a great skill in CS; It’s impossible to know everything.
 
 The user earl doesn't actually exist, but I deleted bobby instead
-
 ![alt text](image-3.png)
 
 
 9. Change the password of sally to something you can remember using
 sudo passwd sally
-
 ![alt text](image-4.png)
 
 10. For the rest of the tasks, use the ubuntu user. Even though it’s easier
@@ -99,7 +94,6 @@ new user while logged in as sally.
 15. Add sally to the group, cybersec
 16. Check to see which groups sally belongs.
 Permission and Access Control Lists:
-
 ![alt text](image-7.png)
 
 17. Create a new directory called lab1. Enter the command to find the
@@ -109,7 +103,6 @@ directory? What permissions does the owner, group and other have?
 Owner has read, write, and execute permission  
 Group has read, write, and execute permission
 Other has read and execute permission
-
 ![alt text](image-8.png)
 
 18. Change your directory to lab1. Create a new bash file called,
@@ -125,6 +118,12 @@ helloWorld file created and executed
 19. Enter the command ls -la helloWorld. What are the reading, writing,
 and executing permissions for the owner, group and other?
 a. Change the permissions so the group also has w and x permissions.
+
+Owner has read, write, and execute permission  
+Group has read, write, and execute permission
+Other has read and execute permission
+
+a. Group already had w/x permissions
 
 
 20. Use the getfacl command to view the ACL of the file.

@@ -1,5 +1,9 @@
 # Linux Command Line Security Lab
 
+**GitHub Repository:** [Cybersecurity Labs](https://github.com/JLin-code/Cybersecurity)
+
+---
+
 ## System Updates and Maintenance
 
 ### 1. Check Available Updates

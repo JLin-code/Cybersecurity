@@ -1,8 +1,28 @@
+<div align="center">
+
 # Linux Command Line Security Lab
 
+## Cybersecurity Fundamentals
+
+---
+
+**School:** SUNY New Paltz 
+**Author:** Jack Lin  
+**Course:** CPS 493-02: Cybersecurity 748 – Fall 2025
+**Instructor:** Kailtlin Hoffman  
+**Assignment:** Lab 1 
+**Date:** October 2, 2025  
 **GitHub Repository:** [Cybersecurity Labs](https://github.com/JLin-code/Cybersecurity)
 
 ---
+
+
+
+---
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 ## System Updates and Maintenance
 

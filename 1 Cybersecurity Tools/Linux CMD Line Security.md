@@ -6,19 +6,13 @@
 
 ---
 
-**School:** SUNY New Paltz 
+**School:** SUNY New Paltz  
 **Author:** Jack Lin  
-**Course:** CPS 493-02: Cybersecurity 748 – Fall 2025
+**Course:** CPS 493-02: Cybersecurity 748 – Fall 2025  
 **Instructor:** Kailtlin Hoffman  
-**Assignment:** Lab 1 
+**Assignment:** Lab 1  
 **Date:** October 2, 2025  
 **GitHub Repository:** [Cybersecurity Labs](https://github.com/JLin-code/Cybersecurity)
-
----
-
-
-
----
 
 </div>
 
@@ -227,6 +221,12 @@ getfacl helloWorld
 ![alt text](image-11.png)
 
 ### 21. ACL Modification
+Using the setfacl command, allow the user, sally, the ability to read and write to the file.
+
+```bash
+sudo setfacl -m u:sally:rw helloWorld
+```
+![alt text](image-12.png)
 Using the setfacl command, allow the user, sally, the ability to read and write to the file.
 
 ```bash

@@ -39,18 +39,23 @@ unset TEST_VAR
 
 **Screenshot 1.1:** Output of `printenv` command
 
-[Insert screenshot here]
+![alt text](printenv.png)
 
 **Screenshot 1.2:** Setting environment variable with `export`
 
-[Insert screenshot here]
+![alt text](export.png)
 
 **Screenshot 1.3:** Unsetting environment variable with `unset`
 
-[Insert screenshot here]
+![alt text](unset.png)
 
 ### Analysis
-[Describe what you observed when using printenv, export, and unset commands. Explain the difference between printenv and env commands.]
+env/printenv lists active environment variables for the current shell
+export NAME=value sets a variable and marks it to be included in the environment of child process, without export a shell variable is local to that shell only
+unset NAME removes the variable from the current shell
+export and unset are shell builtin as part of bash so the are not separate programs
+Child process or any process created by fork inherit the parent's exported environment at the time of the fork. Non-exported shell variables are not inherited
+
 
 ---
 

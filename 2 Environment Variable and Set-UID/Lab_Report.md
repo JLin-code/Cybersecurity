@@ -98,7 +98,7 @@ diff child_output.txt parent_output.txt
 
 ![alt text](diff.png)
 
-### Analysis and Conclusion
+### Analysis
 The diff command here showed nothing which means that the files are identical, meaning that the child processes inherit parent environment variables
 
 ---
@@ -131,10 +131,10 @@ execve("/usr/bin/env", argv, environ);
 
 ![alt text](environmyenv.png)
 
-### Conclusion
+### Analysis
 - When NULL was passed as the third argument to execve() the new program gets no environment variable
 - When environ was passed, the new program inherits all environment variables
-- Unlike fork(), execve() does not automaticall inherit environment variables, so you must explicitly pass them
+- Unlike fork(), execve() does not automatically inherit environment variables, so you must explicitly pass them
 
 ---
 
@@ -159,7 +159,7 @@ gcc mysystem.c -o mysystem
 - The system() function automatically passes environment variables to the executed program
 - The command system() calls /bin/sh which then executes the command
 - Unlike execve() which requires explicit passing of environment, system() does it automatically
-- This makes system() convenient ut potentially dangerous in Set-UID programs
+- This makes system() convenient but potentially dangerous in Set-UID programs
 
 ---
 

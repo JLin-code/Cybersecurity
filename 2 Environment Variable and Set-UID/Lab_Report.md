@@ -506,14 +506,3 @@ For secure programming practices in privileged programs:
 - Use modern security mechanisms like capabilities or SELinux when available
 - Regularly audit code for environment variable dependencies and Set-UID vulnerabilities
 
----
-
-## References
-
-- SEED Labs Manual: Environment Variable and Set-UID Program Lab
-- Computer & Internet Security: A Hands-on Approach, 2nd Edition by Wenliang Du
-- Linux man pages: fork(2), execve(2), setuid(2)
-
----
-
-**End of Report**

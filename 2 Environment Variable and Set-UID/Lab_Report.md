@@ -6,20 +6,20 @@
 ---
 
 ## Table of Contents
-1. [Task 1: Manipulating Environment Variables](#task-1)
-2. [Task 2: Passing Environment Variables from Parent to Child](#task-2)
-3. [Task 3: Environment Variables and execve()](#task-3)
-4. [Task 4: Environment Variables and system()](#task-4)
-5. [Task 5: Environment Variables and Set-UID Programs](#task-5)
-6. [Task 6: The PATH Environment Variable and Set-UID Programs](#task-6)
-7. [Task 7: The LD_PRELOAD Environment Variable](#task-7)
-8. [Task 8: system() versus execve()](#task-8)
-9. [Task 9: Capability Leaking](#task-9)
+1. [Task 1: Manipulating Environment Variables](#task-1-manipulating-environment-variables)
+2. [Task 2: Passing Environment Variables from Parent to Child](#task-2-passing-environment-variables-from-parent-to-child)
+3. [Task 3: Environment Variables and execve()](#task-3-environment-variables-and-execve)
+4. [Task 4: Environment Variables and system()](#task-4-environment-variables-and-system)
+5. [Task 5: Environment Variables and Set-UID Programs](#task-5-environment-variables-and-set-uid-programs)
+6. [Task 6: The PATH Environment Variable and Set-UID Programs](#task-6-the-path-environment-variable-and-set-uid-programs)
+7. [Task 7: The LD_PRELOAD Environment Variable](#task-7-the-ld_preload-environment-variable)
+8. [Task 8: system() versus execve()](#task-8-system-versus-execve)
+9. [Task 9: Capability Leaking](#task-9-capability-leaking)
 10. [Conclusion](#conclusion)
 
 ---
 
-## Task 1: Manipulating Environment Variables {#task-1}
+## Task 1: Manipulating Environment Variables
 
 ### Objective
 Study commands to set and unset environment variables in Bash.
@@ -58,7 +58,7 @@ unset TEST_VAR
 
 ---
 
-## Task 2: Passing Environment Variables from Parent to Child {#task-2}
+## Task 2: Passing Environment Variables from Parent to Child
 
 ### Objective
 Determine whether parent process environment variables are inherited by child processes.
@@ -103,7 +103,7 @@ The diff command here showed nothing which means that the files are identical, m
 
 ---
 
-## Task 3: Environment Variables and execve() {#task-3}
+## Task 3: Environment Variables and execve()
 
 ### Objective
 Study how environment variables are affected when executing a new program via execve().
@@ -138,7 +138,7 @@ execve("/usr/bin/env", argv, environ);
 
 ---
 
-## Task 4: Environment Variables and system() {#task-4}
+## Task 4: Environment Variables and system()
 
 ### Objective
 Study how environment variables are affected when using the system() function.
@@ -163,7 +163,7 @@ gcc mysystem.c -o mysystem
 
 ---
 
-## Task 5: Environment Variables and Set-UID Programs {#task-5}
+## Task 5: Environment Variables and Set-UID Programs
 
 ### Objective
 Determine which environment variables are inherited by Set-UID programs.
@@ -206,7 +206,7 @@ export MY_CUSTOM_VAR=test123
 
 ---
 
-## Task 6: The PATH Environment Variable and Set-UID Programs {#task-6}
+## Task 6: The PATH Environment Variable and Set-UID Programs
 
 ### Objective
 Exploit a Set-UID program by manipulating the PATH environment variable.
@@ -255,7 +255,7 @@ sudo ln -sf /bin/dash /bin/sh
 
 ---
 
-## Task 7: The LD_PRELOAD Environment Variable {#task-7}
+## Task 7: The LD_PRELOAD Environment Variable
 
 ### Objective
 Study how LD_PRELOAD affects Set-UID programs.
@@ -324,7 +324,7 @@ Some systems may have different security configurations explaining why Scenario 
 
 ---
 
-## Task 8: system() versus execve() {#task-8}
+## Task 8: system() versus execve()
 
 ### Objective
 Compare security implications of using system() vs. execve() in Set-UID programs.
@@ -410,7 +410,7 @@ echo "This is a test file" > /tmp/testfile
 
 ---
 
-## Task 9: Capability Leaking {#task-9}
+## Task 9: Capability Leaking
 
 ### Objective
 Exploit a capability leaking vulnerability in a Set-UID program.
@@ -454,7 +454,7 @@ echo "Exploited!" >&3
 
 ---
 
-## Conclusion {#conclusion}
+## Conclusion
 
 ### Key Learnings
 

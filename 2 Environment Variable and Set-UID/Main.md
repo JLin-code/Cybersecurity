@@ -1,11 +1,5 @@
-# SEED Labs - Environment Variable and Set-UID Program Lab Report
+<h2 style="text-align: center;">Table of Contents</h2>
 
-**Student Name:** Jack Lin  
-**Date:**   11/3/2025
-**Course:** 25FA CPS493-02 Cybersecurity 748
----
-
-## Table of Contents
 1. [Task 1: Manipulating Environment Variables](#task-1-manipulating-environment-variables)
 2. [Task 2: Passing Environment Variables from Parent to Child](#task-2-passing-environment-variables-from-parent-to-child)
 3. [Task 3: Environment Variables and execve()](#task-3-environment-variables-and-execve)
@@ -16,6 +10,8 @@
 8. [Task 8: system() versus execve()](#task-8-system-versus-execve)
 9. [Task 9: Capability Leaking](#task-9-capability-leaking)
 10. [Conclusion](#conclusion)
+
+<div style="page-break-after: always;"></div>
 
 ---
 
